@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboubakar Samake Portfolio</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="Portfolio.css">
+
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JavaScript file link -->
+    <script src="Portfolio.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Wrapper for centering content -->
+    <div class="wrapper">
+
+        <!-- #MAIN -->
+        <main>
+
+            <!-- #SIDEBAR (Left) -->
+            <aside class="sidebar" data-sidebar>
+                <div class="sidebar-info">
+                    <figure class="avatar-box">
+                        <img src="MyAvatar.png" alt="Aboubakar Samake" width="80">
+                    </figure>
+
+                    <div class="info-content">
+                        <h1 class="name">Aboubakar Samake</h1>
+                        <p class="title">Information Technology Student</p>
+                    </div>
+
+                    <button class="info_more-btn" data-sidebar-btn>
+                        <span>Show Contacts</span>
+                        <ion-icon name="chevron-down"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="sidebar-info_more hidden">
+                    <div class="separator"></div>
+
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="mailto:aboubakar11@live.fr" class="contact-link">aboubakar11@live.fr</a>
+                            </div>
+                        </li>
+<!--
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+12133522795" class="contact-link">+1 438 493 3881</a>
+                            </div>
+                        </li>
+-->
+
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address>Montreal, Canada</address>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="separator"></div>
+
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="https://www.linkedin.com/in/aboubakar-samake" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- #SIDEBAR (Right) - New Sidebar for Quotes -->
+            <aside class="sidebar-right" id="quote-sidebar">
+                <div class="quote-container">
+                      <div class="quote-display" id="quote-display">
+                        <!-- This is where the quotes will be shown -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Flexbox container for navbar and content alignment -->
+            <div class="flexbox-container">
+                <!-- #NAVBAR -->
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="Portfolio.html" class="navbar-link active">Homepage</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="Experience.html" class="navbar-link">Resume</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="Projects.html" class="navbar-link">Projects</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#contact-section" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- #HOMEPAGE -->
+                <article class="about active" data-page="homepage">
+                    <header>
+                        <!-- Flexbox container for title and button -->
+                        <div class="title-buttons-container">
+                            <h2 class="h2 article-title">About Me</h2>
+                            <button id="about-toggle" class="info-toggle-btn">Show About Me</button>
+                        </div>
+                    </header>
+                    <section class="about-text">
+                        <div id="about-content" class="hidden">
+                          <p>
+    I am a third-year Information Technology student at Bishop's University, with a minor in Sports Studies. I am passionate about leveraging technology to create sustainable solutions and have developed strong interpersonal, leadership, and technical skills through diverse academic and work experiences.
+</p>
+<p>
+    My deep love for soccer, combined with my analytical mindset, drives me to explore ways data can enhance athlete performance. I aim to bridge the gap between sports and technology by offering data-driven solutions that empower athletes and teams to succeed on and off the field.
+</p>
+<p>
+    Equipped with skills in Adobe Photoshop, HTML & CSS, and various IT tools, I am focused on developing impactful applications that provide real-time insights and improve decision-making in the sports world.
+</p>
+
+
+                        </div>
+                    </section>
+                </article>
+
+                <!-- #INTEREST -->
+                <article class="service" data-page="interest">
+      <header>
+          <!-- Flexbox container for title and button -->
+          <div class="title-buttons-container">
+              <h2 class="h2 service-title">My Interests</h2>
+              <button id="interest-toggle" class="info-toggle-btn">Show Interests</button>
+          </div>
+      </header>
+      <section class="service">
+          <div id="interest-content" class="hidden">
+              <ul class="service-list">
+                  <!-- Data Analytics -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/2318/2318736.png" alt="Data Analytics Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Data Analytics</h4>
+                          <p class="service-item-text">
+                              Leveraging data to uncover trends and insights that improve sports performance and decision-making.
+                          </p>
+                      </div>
+                  </li>
+
+                  <!-- Sports Technology -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/5617/5617986.png" alt="Sports Technology Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Sports Technology</h4>
+                          <p class="service-item-text">
+                              Innovating at the intersection of sports and technology to enhance player development and game analysis.
+                          </p>
+                      </div>
+                  </li>
+
+                  <!-- Business Intelligence -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/7980/7980653.png" alt="Business Intelligence Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Business Intelligence</h4>
+                          <p class="service-item-text">
+                              Applying data-driven insights to optimize business strategies and operations in the sports industry.
+                          </p>
+                      </div>
+                  </li>
+
+                  <!-- Marketing -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/17756/17756692.png" alt="Marketing Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Marketing</h4>
+                          <p class="service-item-text">
+                              Developing strategies that elevate sports brands and engage audiences across various platforms.
+                          </p>
+                      </div>
+                  </li>
+
+                  <!-- Performance Analysis -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/10789/10789413.png" alt="Performance Analysis Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Performance Analysis</h4>
+                          <p class="service-item-text">
+                              Analyzing player stats and game data to improve performance and make informed coaching decisions.
+                          </p>
+                      </div>
+                  </li>
+
+                  <!-- Player Scouting -->
+                  <li class="service-item">
+                      <div class="service-icon-box">
+                          <img src="https://cdn-icons-png.flaticon.com/128/17612/17612024.png" alt="Player Scouting Icon" class="icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Player Scouting</h4>
+                          <p class="service-item-text">
+                              Identifying emerging soccer talent by analyzing player potential and performance on the field.
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </section>
+  </article>
+
+                <!-- #CONTACT -->
+                <article class="contact" id="contact-section" data-page="contact">
+                    <header>
+                        <h2 class="h2 article-title">Contact</h2>
+                    </header>
+                    <section class="mapbox" data-mapbox>
+                        <figure>
+                            <!-- Updated Google Maps Embed for Montreal, QC -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.7435658182713!2d-73.56725668444274!3d45.50168897910114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a434bb2c1e5%3A0x4cfc0fef0a1536b9!2sMontreal%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sbd!4v1692909661472!5m2!1sen!2sbd"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </figure>
+                    </section>
+
+                    <!-- Updated Contact Form -->
+                    <section class="contact-form">
+                        <button id="contact-toggle" class="info-toggle-btn">Show Contact</button>
+                        <div id="contact-content" class="hidden">
+                            <form action="https://formspree.io/f/xyzgagob" method="POST">
+                                <div class="input-wrapper">
+                                    <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                                    <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                                </div>
+                                <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+                                <button class="form-btn" type="submit">
+                                    <ion-icon name="paper-plane"></ion-icon>
+                                    <span>Send Message</span>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

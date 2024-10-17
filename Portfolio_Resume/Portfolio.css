@@ -1,0 +1,487 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #051622;
+    color: #deb992;
+    margin: 0;
+    padding-left: 250px;  /* Left sidebar */
+    padding-right: 250px; /* Right sidebar */
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Toggle Button Styles */
+button.info-toggle-btn {
+    background-color: #deb992;
+    color: #051622;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 20px auto; /* Ensure the button is centered horizontally */
+    display: block;
+    text-align: center; /* Center text inside the button */
+}
+
+/* Sidebar Styles */
+.sidebar, .sidebar-right {
+    width: 250px;
+    background-color: #112233;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    left: 0;
+}
+
+.sidebar-right {
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Avatar and Info */
+.sidebar-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar-box img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.info-content h1.name {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #deb992;
+}
+
+.info-content p.title {
+    margin: 0;
+    font-size: 1rem;
+    color: #a8a8a8;
+}
+
+/* Sidebar Toggle */
+.info_more-btn {
+    background-color: #deb992;
+    color: #051622;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_more-btn span {
+    margin-right: 5px;
+}
+
+.info_more-btn:hover {
+    background-color: #051622;
+    color: #deb992;
+}
+
+.sidebar-info_more {
+    margin-top: 20px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #deb992;
+    margin: 20px 0;
+}
+
+/* Contact and Social Lists */
+.contacts-list,
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #051622;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #deb992;
+}
+
+.contact-info p.contact-title {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #a8a8a8;
+}
+
+.contact-info a.contact-link {
+    color: #deb992;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contact-info a.contact-link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-item a.social-link {
+    color: #deb992;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-item a.social-link:hover {
+    color: #a8a8a8;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent; /* Transparent navbar */
+    padding: 20px;
+    text-align: center; /* Center the navbar items */
+    position: relative;
+    width: calc(100% - 500px); /* Subtracting the left and right sidebars */
+    margin-left: 250px; /* Starting after the left sidebar */
+    margin-right: 250px; /* Leave space for the right sidebar */
+    display: flex; /* Flex layout to center the items */
+    justify-content: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal alignment for navbar items */
+    gap: 10px; /* Add some space between items */
+}
+
+.navbar-item {
+    display: inline;
+}
+
+.navbar-link {
+    text-decoration: none;
+    background: linear-gradient(135deg, #112233, #334455); /* Gradient background */
+    color: #deb992;
+    border: 2px solid #deb992;
+    padding: 12px 24px; /* Adjusted padding */
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #deb992;
+    color: #051622;
+    transform: scale(1.05); /* Added hover effect */
+}
+
+/* Section Styles - Ensure Visibility and Centering */
+section.about-text,
+section.service,
+section.contact-form,
+section.body-text {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: calc(100% - 700px); /* Subtracting both sidebar widths */
+    background-color: #112233;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/* Ensure body text fits between sidebars */
+section.body-text p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #deb992;
+}
+
+/* Map Section */
+section.mapbox iframe {
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%; /* Adjusting for full width between sidebars */
+    height: 400px; /* Adjust height to your liking */
+}
+
+/* Form Styles */
+form.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 100%; /* Ensure it fills available space */
+}
+
+form.form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+input.form-input,
+textarea.form-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #deb992;
+    background-color: #051622;
+    color: #deb992;
+    width: 100%;
+}
+
+button.form-btn {
+    background-color: #deb992;
+    color: #051622;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button.form-btn:hover {
+    background-color: #051622;
+    color: #deb992;
+}
+
+/* General Styles - Update */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #051622;
+    color: #deb992;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Flexbox for Logos and Text */
+.logo-and-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.education-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure proper spacing and layout for certification list and badges */
+.certification-list {
+    margin-bottom: 20px;
+}
+
+.certification-badges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.academy-badge {
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 150px;
+}
+
+.academy-badge img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academy-badge:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.academy-badge .cert-name {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #deb992;
+}
+
+.academy-badge:hover .cert-name {
+    display: block;
+}
+
+/* Skills Table */
+.skills-table {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 10px;
+    border: 1px solid #112233;
+    background-color: #112233;
+    color: #deb992;
+}
+
+/* Right Sidebar Styles */
+.sidebar-right {
+    width: 250px;
+    background-color: #112233;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%; /* Fill 80% of the sidebar */
+    width: 100%;
+    margin-top: 10%; /* Leave 10% margin on top */
+    margin-bottom: 10%; /* Leave 10% margin on bottom */
+}
+
+.quote-display {
+    font-size: 1.5rem; /* Adjust for large text */
+    font-weight: bold;
+    color: #deb992;
+    line-height: 1.4;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+/* Icons Color for Interests Section */
+.service-item img.icon {
+    filter: invert(53%) sepia(18%) saturate(1138%) hue-rotate(25deg) brightness(93%) contrast(90%);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar, .sidebar-right {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+
+    section.about-text,
+    section.service,
+    section.contact-form,
+    section.body-text {
+        max-width: 100%;
+    }
+
+    .quote-container {
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .quote-display {
+        font-size: 1.2rem;
+    }
+}
+
+/* Centering Titles */
+h2.article-title, h2.service-title {
+    font-size: 2rem;
+    color: #deb992;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #deb992;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Padding for sections */
+section.timeline, section.skill, section.certifications {
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.timeline-item, .certification-item {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #deb992;
+    padding-left: 10px;
+}
+
+.timeline-text, .certification-text {
+    font-size: 0.9rem;
+    color: #a8a8a8;
+    margin-top: 10px;
+}
+
+/* Skill Progress Bar */
+.skill-progress-bg {
+    background-color: #112233;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.skill-progress-fill {
+    height: 5px;
+    background-color: #deb992;
+    border-radius: 5px;
+}

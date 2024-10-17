@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboubakar Samake - Projects</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="Projects.css">
+
+    <!-- Google Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JavaScript file link -->
+    <script src="Projects.js" defer></script>
+</head>
+
+<body>
+
+    <!-- #MAIN -->
+    <main>
+
+        <!-- #NAVBAR (Same style as other pages) -->
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="Portfolio.html" class="navbar-link">Homepage</a></li>
+                <li class="navbar-item"><a href="Experience.html" class="navbar-link">Resume</a></li>
+                <li class="navbar-item"><a href="Projects.html" class="navbar-link active">Projects</a></li>
+                <li class="navbar-item"><a href="Portfolio.html#contact-section" class="navbar-link" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Portfolio Section -->
+        <article class="portfolio">
+            <header>
+                <h2 class="h2 article-title">Projects</h2>
+            </header>
+
+            <!-- Updated Project Filters to use flexbox instead of ul list -->
+            <nav class="filter-nav">
+                <button class="filter-nav-btn active" data-filter-btn>All</button>
+                <button class="filter-nav-btn" data-filter-btn>School Projects</button>
+                <button class="filter-nav-btn" data-filter-btn>Ecommerce Web Development</button>
+            </nav>
+
+            <section class="projects">
+                <!-- School Projects -->
+                <div class="school-projects-gallery hidden">
+                    <div class="project-item" data-folder="first-website">
+                        <h3 class="h3 service-item-title">
+                            <a href="https://420n13la.github.io/listicle-Abousmk/" target="_blank" class="title-link" data-tooltip="Click to visit First Website">First Website</a>
+                        </h3>
+                        <div class="gallery first-website-gallery hidden">
+                            <img src="FirstWebsite1.1.jpeg" alt="First Website Image 1">
+                            <img src="FirstWebsite1.2.1.jpeg" alt="First Website Image 2">
+                            <img src="FirstWebsite1.2.2.jpeg" alt="First Website Image 3">
+                            <img src="FirstWebsite1.2.3.jpeg" alt="First Website Image 4">
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-folder="web-design-class">
+                        <h3 class="h3 service-item-title">
+                            <a href="https://osiris.ubishops.ca/asamake/index.html/index.html" target="_blank" class="title-link" data-tooltip="Click to visit Web Design Class">Web Design Class</a>
+                        </h3>
+                        <div class="gallery web-design-class-gallery hidden">
+                            <img src="WebDesignClass1.1.jpeg" alt="Web Design Class Image 1">
+                            <img src="WebDesignClass1.2.jpeg" alt="Web Design Class Image 2">
+                            <img src="WebDesignClass1.3.jpeg" alt="Web Design Class Image 3">
+                            <img src="WebDesignClass1.4.jpeg" alt="Web Design Class Image 4">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ecommerce Projects -->
+                <div class="ecommerce-projects-gallery hidden">
+                    <div class="project-item" data-folder="first-product">
+                        <h3>First Product</h3>
+                        <div class="gallery first-product-gallery hidden">
+                            <img src="EcomFirstProd1.1.jpeg" alt="Ecommerce Product 1">
+                            <img src="EcomFirstProd1.2.jpeg" alt="Ecommerce Product 2">
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-folder="second-product">
+                        <h3>Second Product</h3>
+                        <div class="gallery second-product-gallery hidden">
+                            <img src="EcomSecondProd1.1.jpeg" alt="Ecommerce Product 3">
+                            <img src="EcomSecondProd1.2.jpeg" alt="Ecommerce Product 4">
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-folder="third-product">
+                        <h3>Third Product</h3>
+                        <div class="gallery third-product-gallery hidden">
+                            <img src="EcomThirdProd1.1.jpeg" alt="Ecommerce Product 5">
+                            <img src="EcomThirdProd1.2.jpeg" alt="Ecommerce Product 6">
+                            <img src="EcomThirdProd1.3.jpeg" alt="Ecommerce Product 7">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+</body>
+
+</html>
